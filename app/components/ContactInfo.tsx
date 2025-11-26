@@ -1,19 +1,19 @@
 export default function ContactInfo() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 text-gray-800 px-2">
           Información de Contacto
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {/* Dirección */}
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">
+          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 border-2 border-blue-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-100/0 to-cyan-100/0 group-hover:from-blue-100/30 group-hover:to-cyan-100/30 transition-all duration-300"></div>
-            <div className="flex items-start gap-4 relative z-10">
-              <div className="shrink-0">
+            <div className="flex flex-col sm:flex-row items-start gap-4 relative z-10">
+              <div className="shrink-0 mx-auto sm:mx-0">
                 <div className="p-3 rounded-xl bg-white shadow-lg group-hover:shadow-xl transition-all">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-7 h-7 sm:w-8 sm:h-8 text-blue-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -33,11 +33,11 @@ export default function ContactInfo() {
                   </svg>
                 </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800">
                   Dirección
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   Pasaje Eucaliptus, 256
                   <br />
                   Villa El Sol, Catemu
@@ -47,13 +47,13 @@ export default function ContactInfo() {
           </div>
 
           {/* Horarios */}
-          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border-2 border-cyan-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">
+          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 border-2 border-cyan-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-100/0 to-blue-100/0 group-hover:from-cyan-100/30 group-hover:to-blue-100/30 transition-all duration-300"></div>
-            <div className="flex items-start gap-4 relative z-10">
-              <div className="shrink-0">
+            <div className="flex flex-col sm:flex-row items-start gap-4 relative z-10">
+              <div className="shrink-0 mx-auto sm:mx-0">
                 <div className="p-3 rounded-xl bg-white shadow-lg group-hover:shadow-xl transition-all">
                   <svg
-                    className="w-8 h-8 text-cyan-600"
+                    className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -67,17 +67,17 @@ export default function ContactInfo() {
                   </svg>
                 </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800">
                   Horarios de Atención
                 </h3>
                 <div className="space-y-2 text-gray-700">
-                  <p className="leading-relaxed">
+                  <p className="text-sm sm:text-base leading-relaxed">
                     <span className="font-semibold">Lunes a Viernes:</span>
                     <br />
                     09:00 a 20:00 hrs
                   </p>
-                  <p className="leading-relaxed">
+                  <p className="text-sm sm:text-base leading-relaxed">
                     <span className="font-semibold">Sábado:</span>
                     <br />
                     10:00 a 14:00 hrs

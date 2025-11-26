@@ -63,32 +63,34 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4 text-gray-800 px-2">
           Nuestros Servicios
         </h2>
-        <p className="text-center text-gray-600 mb-12 text-lg font-light">
+        <p className="text-center text-gray-600 mb-8 sm:mb-10 md:mb-12 text-base sm:text-lg font-light px-4">
           Servicios especializados en artículos grandes del hogar
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-blue-300 hover:border-2 hover:-translate-y-2 relative overflow-hidden group"
+              className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-blue-300 hover:border-2 hover:-translate-y-1 sm:hover:-translate-y-2 relative overflow-hidden group"
             >
               {/* Efecto de brillo al hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 via-cyan-50/0 to-blue-50/0 group-hover:from-blue-50/50 group-hover:via-cyan-50/30 group-hover:to-blue-50/50 transition-all duration-300"></div>
               <div className="relative">
-                <div className="mb-6 flex justify-center">
-                  <div className="p-4 rounded-2xl bg-gradient-to-br from-gray-50 to-white shadow-inner group-hover:shadow-lg transition-all duration-300">
-                    {service.icon}
+                <div className="mb-4 sm:mb-6 flex justify-center">
+                  <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-50 to-white shadow-inner group-hover:shadow-lg transition-all duration-300">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16">
+                      {service.icon}
+                    </div>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-gray-800 text-center">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-gray-800 text-center">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-center">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
                   {service.description}
                 </p>
               </div>
